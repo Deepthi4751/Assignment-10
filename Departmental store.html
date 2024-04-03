@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Information Form</title>
+</head>
+<body>
+
+<h1>Customer Information</h1>
+
+<form action="/submit_form" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+    <label for="phone">Contact Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br><br>
+
+    <label for="days">Preferred Days of Purchasing:</label>
+    <select id="days" name="days">
+        <option value="1-7">1-7</option>
+        <option value="8-14">8-14</option>
+        <option value="15-21">15-21</option>
+        <option value="22-28">22-28</option>
+        <option value="29-31">29-31</option>
+    </select><br><br>
+
+    <label for="item">Favorite Item:</label>
+    <select id="item" name="item">
+        <option value="Almonds">Almonds</option>
+        <option value="Chocolates">Chocolates</option>
+        <option value="Remote Control">Remote Control</option>
+        <option value="Adapter">Adapter</option>
+        <option value="Football">Football</option>
+    </select><br><br>
+
+    <label for="suggestions">Suggestions:</label>
+    <textarea id="suggestions" name="suggestions" rows="4" cols="50" placeholder="Your feedback or suggestions"></textarea><br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</form>
+
+</body>
+</html>
